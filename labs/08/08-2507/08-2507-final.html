@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv='X-UA-Compatible' content='chrome=1'></meta>
+    <meta http-equiv='Content-Type' content='text/html;charset=utf-8'></meta>
+    <link rel='stylesheet' type='text/css' href='http://www.x3dom.org/x3dom/release/x3dom.css'></link>
+    <script type='text/javascript' src='http://www.x3dom.org/x3dom/release/x3dom.js'></script>
+  </head>
+  <body>
+    <xml>
+      <div style='width:300px;float:right;'>
+        <fieldset style='margin:4px;'>
+          <legend>
+            <strong>Viewer Settings
+            </strong>
+          </legend>
+          <table>
+            <tr>
+              <td>Navigation Mode:
+              </td>
+              <td align='right'>
+                <select style='float:right;' onchange='if (typeof this.selectedIndex != &apos;undefined&apos;) { var e = document.getElementById(&apos;x3dElement&apos;);if (this.options[this.selectedIndex].value === &apos;examine&apos;){ e.runtime.examine(); }else if (this.options[this.selectedIndex].value === &apos;lookat&apos;){ e.runtime.lookAt(); }else if (this.options[this.selectedIndex].value === &apos;walk&apos;){ e.runtime.speed(1.0); e.runtime.walk(); }else if (this.options[this.selectedIndex].value === &apos;fly&apos;){  e.runtime.speed(1.0); e.runtime.fly();  }else if (this.options[this.selectedIndex].value === &apos;walkfast&apos;){ e.runtime.speed(40.0); e.runtime.walk(); }else if (this.options[this.selectedIndex].value === &apos;flyfast&apos;){  e.runtime.speed(40.0); e.runtime.fly();  } }'>
+                  <option value='examine'>Examine
+                  </option>
+                  <option value='lookat'>LookAt
+                  </option>
+                  <option value='walk'>Walk
+                  </option>
+                  <option value='fly'>Fly
+                  </option>
+                  <option value='walkfast'>Walk (fast)
+                  </option>
+                  <option value='flyfast'>Fly (fast)
+                  </option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Debug Display:
+              </td>
+              <td align='right'>
+                <input type='checkbox' onclick='if (this.checked){ document.getElementById(&apos;x3dElement&apos;).runtime.statistics(true); }else { document.getElementById(&apos;x3dElement&apos;).runtime.statistics(false); }'>Stats
+                </input>
+                <input type='checkbox' onclick='var x3dElem=document.getElementById(&apos;x3dElement&apos;);if (this.checked){ x3dElem.style.height=&apos;50%&apos;; } else { x3dElem.style.height=&apos;60%&apos;; }x3dElem.runtime.debug();'>Console
+                </input>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button onclick='document.getElementById(&apos;x3dElement&apos;).runtime.showAll();'>Show Everything
+                </button>
+              </td>
+              <td>
+                <button onclick='document.getElementById(&apos;x3dElement&apos;).runtime.resetView();'>Reset View
+                </button>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+      </div>
+      <div>
+        <h1>Minimalistic X3DOM Viewer
+        </h1>
+        <p>
+          <a href='http://www.x3dom.org'>X3DOM
+          </a> output created with 
+          <a href='http://www.instantreality.org'>InstantReality
+          </a> aopt tool.
+        </p>
+      </div>
+      <div style='clear:both;'></div>
+      <br></br>
+    </xml>
+    <x3d id='x3dElement' showStat='false' showLog='false' style='width:100%;height:75%;'>
+      <scene>
+        <viewpoint DEF='_1' description='Scene 1' jump='false' orientation='0.494206 0.551955 0.671645 2.05874' position='6758.06 330.643 390.157' fieldOfView='0.61087'></viewpoint>
+        <shape DEF='SP_1'>
+          <appearance DEF='COL_FrontColor'>
+            <material diffuseColor='1 1 1'></material>
+          </appearance>
+          <binaryGeometry DEF='BG_1' vertexCount='368 96' primType='"TRIANGLESTRIP" "TRIANGLES"' position='887.733032227 -358.289489746 136.177001953' size='156.42401123 215.960983276 234.765991211' index='binGeo/BG_1_indexBinary.bin' coord='binGeo/BG_1_interleaveBinary.bin#0+16' normal='binGeo/BG_1_interleaveBinary.bin#8+16' coordType='Int16' normalType='Int16'></binaryGeometry>
+        </shape>
+        <shape DEF='SP_2'>
+          <appearance DEF='COL_BackColor'>
+            <material diffuseColor='0.671 0.69 0.8'></material>
+          </appearance>
+          <binaryGeometry DEF='BG_2' vertexCount='5414 11994' primType='"TRIANGLESTRIP" "TRIANGLES"' position='853.724121094 -361.936981201 199.436935425' size='390.799865723 373.369567871 398.708099365' index='binGeo/BG_2_indexBinary.bin' coord='binGeo/BG_2_interleaveBinary.bin#0+16' normal='binGeo/BG_2_interleaveBinary.bin#8+16' coordType='Int16' normalType='Int16'></binaryGeometry>
+        </shape>
+        <shape DEF='SP_3'>
+          <appearance USE='COL_BackColor'></appearance>
+          <binaryGeometry DEF='BG_3' vertexCount='5656 11538' primType='"TRIANGLESTRIP" "TRIANGLES"' position='853.361328125 -361.936981201 9.43688964844' size='392.419494629 375.714904785 37.1490478516' index='binGeo/BG_3_indexBinary.bin' coord='binGeo/BG_3_interleaveBinary.bin#0+16' normal='binGeo/BG_3_interleaveBinary.bin#8+16' coordType='Int16' normalType='Int16'></binaryGeometry>
+        </shape>
+        <shape DEF='SP_5'>
+          <appearance DEF='COL_Default1'>
+            <material></material>
+          </appearance>
+          <binaryGeometry DEF='BG_5' vertexCount='8360 11001' primType='"TRIANGLESTRIP" "TRIANGLES"' position='980.143554688 -336.23840332 177.186187744' size='138.855041504 220.531173706 372.647644043' index='binGeo/BG_5_indexBinary.bin' coord='binGeo/BG_5_interleaveBinary.bin#0+16' normal='binGeo/BG_5_interleaveBinary.bin#8+16' coordType='Int16' normalType='Int16'></binaryGeometry>
+        </shape>
+        <shape DEF='SP_4'>
+          <appearance USE='COL_Default1'></appearance>
+          <binaryGeometry DEF='BG_4' vertexCount='7928 11151' primType='"TRIANGLESTRIP" "TRIANGLES"' position='877.114746094 -361.936981201 194.826675415' size='126.402526855 375.714904785 407.928619385' index='binGeo/BG_4_indexBinary.bin' coord='binGeo/BG_4_interleaveBinary.bin#0+16' normal='binGeo/BG_4_interleaveBinary.bin#8+16' coordType='Int16' normalType='Int16'></binaryGeometry>
+        </shape>
+        <shape DEF='SP_6'>
+          <appearance USE='COL_Default1'></appearance>
+          <binaryGeometry DEF='BG_6' vertexCount='9219 9264' primType='"TRIANGLESTRIP" "TRIANGLES"' position='793.297180176 -361.936981201 208.792495728' size='268.889038086 372.312561035 379.99697876' index='binGeo/BG_6_indexBinary.bin' coord='binGeo/BG_6_interleaveBinary.bin#0+16' normal='binGeo/BG_6_interleaveBinary.bin#8+16' coordType='Int16' normalType='Int16'></binaryGeometry>
+        </shape>
+        <shape DEF='SP_0'>
+          <appearance USE='COL_Default1'></appearance>
+          <binaryGeometry DEF='BG_0' vertexCount='6304 12219' primType='"TRIANGLESTRIP" "TRIANGLES"' position='795.526855469 -361.936981201 10.3182373047' size='276.750610352 375.714904785 38.9117431641' index='binGeo/BG_0_indexBinary.bin' coord='binGeo/BG_0_interleaveBinary.bin#0+16' normal='binGeo/BG_0_interleaveBinary.bin#8+16' coordType='Int16' normalType='Int16'></binaryGeometry>
+        </shape>
+      </scene>
+    </x3d>
+  </body>
+</html>
