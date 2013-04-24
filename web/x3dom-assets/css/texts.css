@@ -1,0 +1,65 @@
+/*-------------------------------------------------------------------------------------
+ * Licensed under GNU GPLv2 (c) Hassadee Pimsuwan
+ * ------------------------------------------------------------------------------------
+ * ___ ____  _____  _______ _______  _____ _______   ______  ______   ___  ___
+ * | | | | |/ _ \ \/ ___)__) ___)__)/ _ \ \|  _ \ \ / ___)_)/ ___)_) / \_\/ \ \
+ * | |_| | | (_) |( (_(___( (_(___ | (_) | | | | | | (_(___| (_(___ (        ) )
+ * |  _  | |  _  | \___ \ \\___ \ \|  _  | | | | | |  ___)_)  ___)_) \      / /
+ * | | | | | | | | |___) ) )___) ) ) | | | | |_| | | (_(___| (_(___   \    / /
+ * |_|/|_|/|_|/|_|/(____/_/(____/_/|_|/|_|/|____/_/ \____)_)\____)_)   \__/_/
+ * Hassadee Pimsuwan - @hapztron
+ * ------------------------------------------------------------------------------------
+ */
+
+body {
+	font-family: "HelveticaNeue-Light", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 14px;
+}
+
+
+h1, h2, h3, h4, h5, h6 { 
+	color: #f4f4f4;
+	-webkit-font-smoothing: antialiased;
+}
+h1 {
+	font-size: 26px;
+	font-family: "HelveticaNeue-Light", "HelveticaNeue", Helvetica, sans-serif;
+	color: #fff;
+	font-weight: 300;
+}
+h2 { font-size: 23px; }
+h3 { font-size: 21px; }
+h4 { font-size: 19px; }
+h5 { font-size: 17px; }
+h6 { font-size: 15px; }
+p, h1, h2, h3, h4, h5, h6, ul {	
+	margin: 5px 0;
+}
+
+article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+a {
+	-webkit-font-smoothing: antialiased;
+	text-decoration: underline; 
+	color: #f4f4f4;
+}
+
+#x3dom-page > header .header-bar-container {
+	line-height: 22px;
+}
+
+#x3dom-page > header .header-bar-container h1 {
+	color: #ffdd4c;
+}
+
+#x3dom-page > footer .footer-bar-container {
+	color: #f0f0f0;
+	-webkit-font-smoothing: antialiased;
+	line-height: 20px;
+}
+
+.page nav[class="header-nav"] a {
+	color: #333;
+	line-height: 40px;
+	text-decoration: none;
+}

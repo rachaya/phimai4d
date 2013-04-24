@@ -1,0 +1,56 @@
+body {
+    background-image: url('../../images/bg.jpg');
+    overflow: hidden;
+}
+
+#x3dom-page > header.header-bar,
+#x3dom-page > footer.footer-bar {
+    position: absolute;
+        left: 0;
+    width: 100%;
+}
+
+#x3dom-page > header.header-bar {
+    background: #9c5f0e;
+        top: 0;
+    height: 50px;
+}
+
+#x3dom-page > footer.footer-bar {
+    background: #333;
+        bottom: 0;
+    height: 30px;
+}
+
+#x3dom-page > header .header-bar-container,
+#x3dom-page > footer .footer-bar-container {
+    width: 980px;
+}
+
+#x3dom-page > header .header-bar-container {
+    margin: 10px auto;
+    height: 30px;
+}
+
+#x3dom-page > header .header-bar-container nav {
+    float: right;
+}
+
+#x3dom-page > header .header-bar-container .header-bar-title {
+    float: left;
+}
+
+#x3dom-page > footer .footer-bar-container {
+    margin: 5px auto;
+    height: 20px;
+}
+
+x3d#x3dElement {
+    border: 0;
+    overflow: hidden;
+    position: absolute;
+        top: 50px;
+        left: 0;
+    width: 100%;
+    height: calc(100% - 80px);
+}
